@@ -104,23 +104,22 @@ This configuration demonstrates:
 
 ---
 
-## 🧠 Extension Ideas
+## 🧠 Next Steps
 
 - Replace `remote-exec` with **cloud-init** or **Ansible** for idempotent provisioning  
 - Integrate with **CI/CD pipelines** for automated deployment  
 - Add **monitoring agents** (e.g., Prometheus Node Exporter) for observability  
 - Scaffold into a **smart home automation pipeline** or **healthcare IT module**
 
----
 
 ## 📎 License
 
 This project is intended for educational and demonstrative use. Adapt freely for curriculum artefacts, sector-facing documentation, or portfolio entries.
 
-```
-Authenticate with Azure using the **Azure CLI**, but it can't find the `az` executable in your system's `PATH`. In other words, Terraform expects Azure CLI to be installed and accessible—but it’s missing.
 
----
+## Notes
+
+Authenticate with Azure using the **Azure CLI**
 
 ### 🛠️ How to Fix It
 
@@ -142,14 +141,23 @@ If you're using local development or a CI runner that supports CLI-based auth:
    ```bash
    az version
    ```
+4. **Check Installation to Retrieve SubscriptionID**
+  
+ ```bash
+   az account show --query id --output tsv
 
----
+or 
+  az account list --output table
+
+
+   ```
+
 
 #### ✅ **Option 2: Use Service Principal Authentication (Recommended for CI/CD)**
 
-If you're running Terraform in automation (e.g., GitHub Actions, Azure DevOps), you should use **environment variables** for authentication instead of relying on Azure CLI.
+The use of  **environment variables** for authentication when running Terraform in automation such as GitHub Actions and Azure DevOps is best practices instead of relying on Azure CLI.
 
-Add these to your environment:
+The folloing MUST be added the environment:
 
 ```bash
 export ARM_CLIENT_ID="your-client-id"
@@ -157,41 +165,4 @@ export ARM_CLIENT_SECRET="your-client-secret"
 export ARM_SUBSCRIPTION_ID="your-subscription-id"
 export ARM_TENANT_ID="your-tenant-id"
 ```
-
-Then update your provider block:
-```hcl
-provider "azurerm" {
-  features {}
-}
-```
-
-This bypasses the need for Azure CLI entirely and is more secure and portable.
-
----
-
-### 🧠 Strategic Insight
-
-For curriculum artefacts or recruiter-facing documentation, this is a great moment to demonstrate:
-- **Secure, CLI-independent authentication**
-- **CI/CD readiness**
-- **Infrastructure-as-code maturity**
-
-
-### 🔧 **Technically Precise Titles**
-- **Automated Provisioning of Azure-Based NGINX Web Server via Terraform and Virtual Network Isolation**
-- **Infrastructure-as-Code Deployment of Secure NGINX Web Service on Azure Virtual Machine**
-- **Declarative Cloud Provisioning of NGINX Web Server Using Terraform and Azure Resource Modules**
-
-
-### 🚀 **Recruiter-Optimized Titles (Impact-Focused)**
-- **Cloud-Native Web Server Deployment with Terraform: Secure, Scalable, and Audit-Ready**
-- **End-to-End Azure VM Provisioning with NGINX: Infrastructure-as-Code for Real-Time Web Delivery**
-- **Terraform-Driven Azure Infrastructure for High-Availability NGINX Hosting**
-
----
-
-### 🧠 **Curriculum Artefact / Portfolio-Ready Titles**
-- **Modular Azure Infrastructure Provisioning with Terraform: NGINX Web Server in a Secure VNet**
-- **Terraform-Based Azure VM Deployment with Remote-Exec Provisioning of NGINX: A CI/CD-Ready Blueprint**
-- **Secure Web Service Delivery on Azure: A Terraform-Defined Infrastructure Stack with NGINX**
 
