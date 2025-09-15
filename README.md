@@ -1,4 +1,4 @@
-# 🚀 Azure VM Provisioning with Nginx Installation via Terraform
+# 🚀 Declarative Cloud Provisioning of NGINX Web Server Using Terraform and Azure Resource Modules
 
 ## Project Overview
 
