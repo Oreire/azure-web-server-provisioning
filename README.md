@@ -2,8 +2,7 @@
 
 ## Project Overview
 
-This Terraform configuration automates the provisioning of a **Linux Virtual Machine** on **Microsoft Azure**, complete with **networking, security**, and **Nginx installation** using a `remote-exec` provisioner. It is ideal for demonstrating infrastructure-as-code principles, cloud-native provisioning, and automated service deployment.
-
+**Automated provisioning** of Linux-based web server on **Microsoft Azure** using **Terraform**, featuring **secure network configuration** and **remote-exec deployment of Nginx**. This project demonstrates **infrastructure-as-code principles, streamlines cloud-native service delivery, and reinforces scalable deployment workflows**.
 
 
 ## 📦 Provisioned Components
