@@ -37,7 +37,7 @@
 
 ### VM Details
 - **Name**: `laredo-vm`
-- **Size**: `Standard_DS1_v2`
+- **Size**: "Standard_B2s"
 - **OS**: Ubuntu Server `18.04-LTS`
 - **Disk**: 30GB, `Standard_LRS`
 - **Admin Credentials**:
