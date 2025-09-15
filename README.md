@@ -176,4 +176,22 @@ For curriculum artefacts or recruiter-facing documentation, this is a great mome
 - **CI/CD readiness**
 - **Infrastructure-as-code maturity**
 
-Want help scaffolding this into a smart home automation pipeline or visualising the authentication flow in a CI/CD diagram? I can also help you map it to audit readiness and SLA compliance.
+
+### 🔧 **Technically Precise Titles**
+- **Automated Provisioning of Azure-Based NGINX Web Server via Terraform and Virtual Network Isolation**
+- **Infrastructure-as-Code Deployment of Secure NGINX Web Service on Azure Virtual Machine**
+- **Declarative Cloud Provisioning of NGINX Web Server Using Terraform and Azure Resource Modules**
+
+
+### 🚀 **Recruiter-Optimized Titles (Impact-Focused)**
+- **Cloud-Native Web Server Deployment with Terraform: Secure, Scalable, and Audit-Ready**
+- **End-to-End Azure VM Provisioning with NGINX: Infrastructure-as-Code for Real-Time Web Delivery**
+- **Terraform-Driven Azure Infrastructure for High-Availability NGINX Hosting**
+
+---
+
+### 🧠 **Curriculum Artefact / Portfolio-Ready Titles**
+- **Modular Azure Infrastructure Provisioning with Terraform: NGINX Web Server in a Secure VNet**
+- **Terraform-Based Azure VM Deployment with Remote-Exec Provisioning of NGINX: A CI/CD-Ready Blueprint**
+- **Secure Web Service Delivery on Azure: A Terraform-Defined Infrastructure Stack with NGINX**
+
